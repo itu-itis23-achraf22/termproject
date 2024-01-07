@@ -1,0 +1,204 @@
+@import 'https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap';
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+html {
+	font-size: 10px;
+	font-family: Arial, Helvetica, sans-serif;
+	scroll-behavior:smooth;
+}
+a {
+	text-decoration: none;
+}
+.container {
+	min-height: 100vh;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 0;
+}
+
+/* main*/
+#main {
+	background-image: url(./images/eb50875a68b04b0480fa929af2c7547c.gif);
+	background-size: cover;
+	background-position: top center;
+	position: relative;
+	z-index: 1;
+}
+
+#main h1 {
+	display: block;
+	width: fit-content;
+	font-size: 5rem;
+	position: relative;
+	color: transparent;
+  font-family: 'Bungee Spice',Arial, Helvetica, sans-serif;
+  animation: text_reveal 0.5s ease forwards;
+  animation-delay: 1s;
+}
+#main .main{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 50px;
+  justify-content: flex-start;
+}
+#main .cta {
+	display: inline-block;
+	padding: 12px 35px;
+  color: tomato ;
+  background-color: transparent;
+  border: 1px solid tomato;
+  margin-top: 40px;
+}
+#main .cta:hover {
+  cursor: pointer;
+  color: white;
+  background-color: tomato;
+}
+
+#main h1 span {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 0;
+	background-color: rgb(220, 103, 20);
+	animation: text_reveal_box 1s ease;
+	animation-delay: 0.5s;
+}
+/* end of main*/
+
+/* more*/
+
+#more .more{
+  flex-direction: column;
+  text-align: center;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 8px 0;
+}
+
+#more .section-title {
+  font-size: 3rem;
+  font-weight: 250;
+  color: black;
+  margin-top: 12px;
+}
+#more .more-item{
+  flex-basis: 5%;
+  display: flex; 
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  padding: 200px;
+  border-radius: 10px;
+  background-image: url(images/0816a33753867cecd2093d3a7eadbcf0.jpg);
+  background-size: cover;
+  margin: 5px 2.5%;
+	margin-right: 2%;;
+}
+
+.more .more-bottom .icon{
+  height: 80px;
+  width: 80px;
+  margin-bottom: 20px;
+}
+
+ img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+#more .more-item h2 {
+  font-size: 2rem;
+  color: rgb(96, 231, 6);
+  margin-bottom:12px ;
+}
+
+#more .more-item ul {
+  color: white;
+  text-align: left;
+  font-size: 1.5rem;
+  line-height: 1.9rem;
+  font-weight: bold;
+	display: inline-block;
+}
+
+/* About Section */
+#about{
+	background-image: url(images/e0577d3e97c8115965b090c16f5534d2.gif);
+	background-size: cover;
+	background-position: top center;
+	position: relative;
+	z-index: 1;
+}
+#about .about {
+	flex-direction: column-reverse;
+	text-align: center;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 100px 20px;
+	font-size: 20px;
+	color:#ff6f3c;
+	font-weight: bold;
+}
+#about .col-left {
+	width: 250px;
+	height: 360px;
+}
+#about .col-right {
+	width: 100%;
+}
+#about .col-right h2 {
+	font-size: 1.8rem;
+	font-weight: 500;
+	letter-spacing: 0.2rem;
+	margin-bottom: 10px;
+}
+#about .col-right p {
+	margin-bottom: 20px;
+}
+
+#about  .about-img {
+	height: 100%;
+	width: 100%;
+	clip-path: circle() ;
+}
+
+/* End About Section */
+/* startkeygrame*/
+@keyframes text_reveal_box {
+	50% {
+		width: 100%;
+		left: 0;
+	}
+	100% {
+		width: 0;
+		left: 100%;
+	}
+}
+@keyframes text_reveal {
+	100% {
+		color: white;
+	}
+}
+@keyframes text_reveal_name {
+	100% {
+		color: rgb(220, 87, 20);
+		font-weight: 500;
+	}
+}
+/* EndKeyframes */
+@media only screen and (min-width: 1200px) {
+  #services .service-bottom .service-item {
+    flex-basis: 22%;
+    margin: 1.5%;
+  }
+}
+
+/* Start https://www.cursors-4u.com */ * {cursor: url(https://ani.cursors-4u.net/games/gam-16/gam1556.cur), auto !important;} /* End https://www.cursors-4u.com */

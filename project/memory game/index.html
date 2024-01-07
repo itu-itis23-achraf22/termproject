@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>memory game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  
+<!--track info-->
+  <div class="info-container">
+    <div class="name">Memory game</div>
+    <div class="correct">Correct answers: <span id="span">0</span></div>
+    <div class="controls-buttons">
+      <button id="startButton" class="start" onclick="startGame()"><span>Start</span></button>
+      <button id="resetButton" class="Reset" onclick="resetGame()"><span>Reset</span></button>
+      
+    </div>
+  </div>
+  
+<!-- structure of the game-->
+  <div class="memory-game-blocks">
+    <!--the back and front version of each card / we need two-->
+    <div class="game-block" letter="A">
+      <div class="face front"></div>
+      <div class="face  back">
+        <img src = "vectors/A.svg" />
+      </div>
+    </div>
+
+    <div class="game-block" letter="H">
+      <div class="face front"></div>
+      <div class="face  back">
+        <img src = "vectors/h.svg" />
+      </div>
+    </div>
+
+
+    <div class="game-block" letter="R">
+      <div class="face front"></div>
+      <div class="face  back">
+        <img src = "vectors/R.svg" />
+      </div>
+    </div>
+
+    <div class="game-block" letter="C">
+      <div class="face front"></div>
+      <div class="face  back">
+        <img src = "vectors/C.svg" />
+      </div>
+    </div>
+  
+    <div class="game-block" letter="A">
+      <div class="face front"></div>
+      <div class="face  back">
+        <img src = "vectors/A.svg" />
+      </div>
+    </div>
+    <div class="game-block" letter="F">
+      <div class="face front"></div>
+      <div class="face  back">
+        <img src = "vectors/F.svg" />
+      </div>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
